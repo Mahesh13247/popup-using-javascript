@@ -13,8 +13,8 @@ body {
   padding: 8px;
   position: fixed;
   box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.3);
-  transform: translate(-50%, -50%) scale(0);             /*   pop up showing */
-  transition: all 0.2s ease-in-out;
+  transform: translate(50%, 150%) scale(0);
+  transition: all 0.3s ease-in-out;
   top: 0;
   left: 0;
   /* display: none; */
@@ -29,12 +29,14 @@ body {
 }
 
 .close-icon {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   position: absolute;
   right: 16px;
   cursor: pointer;
   font-family: serif;
+  transform: translate(-16px, -350%);
+  color: #afa187;
 }
 
 .overlay {
@@ -75,48 +77,68 @@ body {
   border: none;
   background-color: rgb(235, 191, 83);
   color: #fefaf3;
-  font-family:sans-serif;
+  font-family: sans-serif;
   font-size: 28.18px;
   font-weight: 400;
   line-height: 41.4px;
   text-align: left;
   text-decoration-skip-ink: none;
+  cursor: pointer;
 }
 
-.button:hover{
-    box-shadow: rgba(235, 191, 83, 0.4) 0px 30px 90px;
+.button:hover {
+  box-shadow: rgba(235, 191, 83, 0.4) 0px 30px 90px;
 }
 
-
-
-.popup img{
-    width: 200px;
-    height: 200px;
-    padding-left: 30px;
-    transform: translate(6%, -22%);
-
+.popup img {
+  width: 200px;
+  height: 200px;
+  padding-left: 30px;
+  transform: translate(6%, -22%);
 }
 
-.popup h2{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 30px;
-font-weight: 400;
-line-height: 45px;
-text-align: left;
-transform: translate(50%,-400%);
-padding-left: 30px;
-
+.popup h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: left;
+  transform: translate(50%, -400%);
+  padding-left: 30px;
 }
 
+.popup p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 54px;
+  text-align: left;
+  transform: translate(50%, -400%);
+  padding-left: 30px;
+}
 
+.signup .email {
+  background-color: #eee8dd;
+  transform: translate(10%, -280%);
+  height: 40px;
+  width: 23rem;
+}
 
+.email {
+  font-family: sans-serif;
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  border: none;
+}
 
-.popup p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 54px;
-    text-align: left;
-    transform: translate(50%,-400%);
-    padding-left: 30px;
-    
+.subscribe {
+  background-color: rgb(235, 191, 83);
+  color: white;
+  padding: 10px;
+  transform: translate(70%, -440%);
+  border-radius: 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
