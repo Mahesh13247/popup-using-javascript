@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Popup Using JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"defer></script>
-</head>
-<body>
-    <button>Get Newsletter</button>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cover-box">
+        <button class="button">Get Newsletter</button>
+        <!-- <div class="button">Get Newsletter</div> -->
+      </div>
+    </div>
     <div class="popup-container">
       <div class="overlay"></div>
       <div class="popup">
+        <img src="tree.png" alt="tree">
         <div class="close-icon">&times;</div>
-        <h2>Don't Miss Out</h2>
+        <h2>Don't Miss Out.</h2>
         <p>Sign up for our newsletter to stay in the loop.</p>
       </div>
     </div>
-</body>
+  </body>
 </html>
